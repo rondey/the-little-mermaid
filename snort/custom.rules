@@ -1,0 +1,15 @@
+alert tcp any any -> any any (msg:"Dir Command - Possible Remote Shell"; content:"dir"; sid:10000001;)
+alert tcp any any -> any any (msg:"Dir Command - Possible Remote Shell"; content:"DIR"; sid:10000002;)
+alert tcp any any -> any any (msg:"Dir Command - Possible Remote Shell"; content:"<DIR>"; sid:10000003;)
+alert tcp any any -> any any (msg:"Cd Command - Possible Remote Shell"; content:"cd "; sid:10000004;)
+alert tcp any any -> any any (msg:"Cd Command - Possible Remote Shell"; content:"Cd "; sid:10000005;)
+alert tcp any any -> any any (msg:"Cd Command - Possible Remote Shell"; content:"cD "; sid:10000006;)
+alert tcp any any -> any any (msg:"Cd Command - Possible Remote Shell"; content:"CD "; sid:10000007;)
+alert tcp any any -> any any (msg:"MKDIR Command - Possible Remote Shell"; content:"mkdir "; sid:10000008;)
+alert tcp any any -> any any (msg:"Del Command - Possible Remote Shell"; content:"del "; sid:10000009;)
+alert tcp any any -> any any (msg:"Del Command - Possible Remote Shell"; content:"erase "; sid:10000010;)
+alert tcp any any -> any any (msg:"Format Command - Possible Remote Shell"; content:"format "; sid:10000011;)
+
+
+
+
